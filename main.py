@@ -4,7 +4,7 @@ from expression import Expression
 
 app = Flask(__name__)
 
-@app.route("/", methods=["POST"])
+@app.route("/calculate", methods=["POST"])
 def calculate() -> str:
     posted_content = request.get_json()
 
